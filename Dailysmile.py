@@ -50,8 +50,6 @@ def getDocUrl(url=None):
     Return:
         [Generator]: 详情页URL的生成器
     """
-    # 继续获得文章的网址一直是一样的，应该是网站记录sessionid，然后在遇到相同的sessionid的时候返回下一页的数据
-    # ????  这一句要打一个问号: 如果该ip（session id)访问了第一页的url时,过程从头开始
     if not url:
         # 如果url未传参，则默认访问下一页
         nextPageUrlID = '' # 你的带有session_id参数的url
